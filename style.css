@@ -1,0 +1,76 @@
+body{
+    background-color: #f3f5fc;
+}
+
+                /*Logo*/
+.logo{
+    display: inline;
+    position: relative;
+    top: 40px;
+    left: 10px;px;
+}
+
+                /*Espacio para escribir*/
+
+.ingrese-texto{ 
+    background-color: #f3f5fc; /*fondo del input*/
+    border: none; /*Sin borde*/
+    display: inline; /*Restricción de pocisión*/
+
+    position: relative ; /*una posición relativa*/
+    top: 30px; /*distancia de arriba*/
+    left: 160px; /*distancia de la izquierda*/
+        
+    font-size: 25px; /*Tamaño texto*/
+    color: darkblue; /*Color texto*/
+    outline: none; /*Sin borde cuando se está escribiendo*/
+}
+
+::placeholder{ /*texto de ejemplo*/
+    color: darkblue; /*Color del texto*/
+}
+
+                /*BOTON DE RESPUESTA*/
+.texto-respuesta{
+    background-color: white; /*fondo del input*/
+    border: white; /*Sin borde*/
+    width: 200px; /*tamaño-Anchura*/
+    height: 400px; /*tamaño-Altura*/
+                
+    display: inline; /*Restricción de pocisión*/
+    position: relative ; /*una posición relativa*/
+    top: px; /*distancia de arriba*/
+    left: 600px; /*distancia de la izquierda*/
+    font-size: 25px; /*Tamaño texto*/
+                
+    color: black; /*Color texto*/
+    outline: none; /*Sin borde cuando se está escribiendo*/
+}
+
+
+                /*Botones*/
+.botones{
+    display: inline; /*que ocupe solo el espacio necesario*/
+    position: relative ; /*una posición relativa*/
+    top: 295px; /*distancia de arriba*/
+    left: 160px; /*distancia de la izquierda*/
+
+}
+
+.boton-encriptar{
+    background-color: darkblue;
+    color: white;
+    border-color: darkblue;
+    border-radius: 17px;
+    padding: 12px 60px;
+}
+
+
+.boton-desencriptar{
+    background-color: #d8dfe8;
+    color: darkblue;
+    border-color: darkblue;
+    border-radius: 17px;
+    padding: 12px 60px;
+}
+
