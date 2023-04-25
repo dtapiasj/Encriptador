@@ -12,10 +12,10 @@ body{
 
                 /*Espacio texto usuario*/
 .div-ingrese-texto{
-    display: inline;
-    position: relative;
+    display: flex;
+    position: absolute;
     top: 175px;
-    left: 120px;
+    left: 234px;
 }
 
 .ingrese-texto{ 
@@ -32,47 +32,50 @@ body{
     color: darkblue; /*Color del texto de ejemplo*/
 }
 
-                /*BOTON DE RESPUESTA*/
-.texto-respuesta{
-    background-color: white; /*fondo del input*/
-    border: white; /*Sin borde*/
-    width: 200px; /*tamaño-Anchura*/
-    height: 400px; /*tamaño-Altura*/
-                
-    display: inline; /*Restricción de pocisión*/
-    position: relative ; /*una posición relativa*/
-    top: px; /*distancia de arriba*/
-    left: 600px; /*distancia de la izquierda*/
-    font-size: 25px; /*Tamaño texto*/
-                
-    color: black; /*Color texto*/
-    outline: none; /*Sin borde cuando se está escribiendo*/
-}
-
 
                 /*Botones*/
-.botones{
-    display: inline; /*que ocupe solo el espacio necesario*/
-    position: relative ; /*una posición relativa*/
-    top: 295px; /*distancia de arriba*/
-    left: 160px; /*distancia de la izquierda*/
+.div-botones{
+    display: flex; /*que ocupe solo el espacio necesario*/
+    position: absolute ; /*una posición relativa*/
+    top: 520px; /*distancia de arriba*/
+    left: 234px; /*distancia de la izquierda*/
 
 }
 
 .boton-encriptar{
+    height: 50px;
+    width: 280px;
     background-color: darkblue;
     color: white;
-    border-color: darkblue;
-    border-radius: 17px;
-    padding: 12px 60px;
+    border: 1px solid #0a3871 ;
+    border-radius: 24px;
+    margin: 0 6px;
 }
 
 
 .boton-desencriptar{
+    height: 50px;
+    width: 280px;
     background-color: #d8dfe8;
     color: darkblue;
-    border-color: darkblue;
-    border-radius: 17px;
-    padding: 12px 60px;
+    border: 1px solid #0a3871 ;
+    border-radius: 24px;
+    margin: 0 6px;
 }
 
+                /*TEXTO DE RESPUESTA*/
+                .texto-respuesta{
+                    background-color: white; /*fondo del input*/
+                    border: white; /*Sin borde*/
+                    width: 200px; /*tamaño-Anchura*/
+                    height: 400px; /*tamaño-Altura*/
+                                
+                    display: inline; /*Restricción de pocisión*/
+                    position: relative ; /*una posición relativa*/
+                    top: px; /*distancia de arriba*/
+                    left: 600px; /*distancia de la izquierda*/
+                    font-size: 25px; /*Tamaño texto*/
+                                
+                    color: black; /*Color texto*/
+                    outline: none; /*Sin borde cuando se está escribiendo*/
+                }
