@@ -7,20 +7,20 @@ body{
     display: inline;
     position: relative;
     top: 40px;
-    left: 10px;px;
+    left: 40px;
 }
 
-                /*Espacio para escribir*/
+                /*Espacio texto usuario*/
+.div-ingrese-texto{
+    display: inline;
+    position: relative;
+    top: 140px;
+    left: 120px;
+}
 
 .ingrese-texto{ 
     background-color: #f3f5fc; /*fondo del input*/
     border: none; /*Sin borde*/
-    display: inline; /*Restricción de pocisión*/
-
-    position: relative ; /*una posición relativa*/
-    top: 30px; /*distancia de arriba*/
-    left: 160px; /*distancia de la izquierda*/
-        
     font-size: 25px; /*Tamaño texto*/
     color: darkblue; /*Color texto*/
     outline: none; /*Sin borde cuando se está escribiendo*/
