@@ -14,20 +14,22 @@ body{
 .div-ingrese-texto{
     display: inline;
     position: relative;
-    top: 140px;
+    top: 175px;
     left: 120px;
 }
 
 .ingrese-texto{ 
     background-color: #f3f5fc; /*fondo del input*/
     border: none; /*Sin borde*/
-    font-size: 25px; /*Tamaño texto*/
+    height: 48px; /*Alto del espacio para escribir*/
+    width: 577px; /*Largo del espacio para escribir*/
+    font-size: 32px; /*Tamaño texto*/
     color: darkblue; /*Color texto*/
     outline: none; /*Sin borde cuando se está escribiendo*/
 }
 
 ::placeholder{ /*texto de ejemplo*/
-    color: darkblue; /*Color del texto*/
+    color: darkblue; /*Color del texto de ejemplo*/
 }
 
                 /*BOTON DE RESPUESTA*/
