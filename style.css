@@ -1,3 +1,5 @@
+                /*Color de fondo de la página*/
+
 body{
     background-color: #f3f5fc;
 }
@@ -30,6 +32,7 @@ body{
 
 ::placeholder{ /*texto de ejemplo*/
     color: darkblue; /*Color del texto de ejemplo*/
+    opacity: 50%;
 }
 
 
@@ -39,7 +42,6 @@ body{
     position: absolute ; /*una posición relativa*/
     top: 520px; /*distancia de arriba*/
     left: 234px; /*distancia de la izquierda*/
-
 }
 
 .boton-encriptar{
@@ -64,18 +66,45 @@ body{
 }
 
                 /*TEXTO DE RESPUESTA*/
-                .texto-respuesta{
-                    background-color: white; /*fondo del input*/
-                    border: white; /*Sin borde*/
-                    width: 200px; /*tamaño-Anchura*/
-                    height: 400px; /*tamaño-Altura*/
-                                
-                    display: inline; /*Restricción de pocisión*/
-                    position: relative ; /*una posición relativa*/
-                    top: px; /*distancia de arriba*/
-                    left: 600px; /*distancia de la izquierda*/
-                    font-size: 25px; /*Tamaño texto*/
-                                
-                    color: black; /*Color texto*/
-                    outline: none; /*Sin borde cuando se está escribiendo*/
-                }
+
+.canvas{
+    background: white;
+    border-radius: 32px;
+    display: flex; /*que ocupe solo el espacio necesario*/
+    position: absolute ; /*una posición relativa*/
+    top: 60px;
+    left: 900px;
+    width: 250px;
+    height: 530px;
+}
+
+.muñeco{
+    display: flex; /*que ocupe solo el espacio necesario*/
+    position: absolute ; /*una posición relativa*/
+    top: 180px;
+    left: 910px;
+    width: 226px;
+    height: 194px;
+}
+
+.mensaje-1{
+    display: flex;
+    position: absolute;
+    top: 390px;
+    left: 910px;
+    width: 226px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.mensaje-2{
+    display: flex;
+    position: absolute;
+    top: 440px;
+    left: 910px;
+    width: 226px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
