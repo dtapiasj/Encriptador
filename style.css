@@ -23,11 +23,12 @@ body{
 .ingrese-texto{ 
     background-color: #f3f5fc; /*fondo del input*/
     border: none; /*Sin borde*/
-    height: 48px; /*Alto del espacio para escribir*/
+    height: 250px; /*Alto del espacio para escribir*/
     width: 577px; /*Largo del espacio para escribir*/
     font-size: 32px; /*Tamaño texto*/
     color: darkblue; /*Color texto*/
     outline: none; /*Sin borde cuando se está escribiendo*/
+    resize:none;
 }
 
 ::placeholder{ /*texto de ejemplo*/
