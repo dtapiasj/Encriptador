@@ -45,6 +45,15 @@ body{
     left: 234px; /*distancia de la izquierda*/
 }
 
+label{
+    display: flex;
+    position:absolute;
+    margin: -30px 30px;
+    font-size: 12px;
+    color: #495057;
+
+}
+
 .boton-encriptar{
     height: 50px;
     width: 280px;
