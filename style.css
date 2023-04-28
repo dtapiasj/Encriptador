@@ -25,7 +25,7 @@ body{
     border: none; /*Sin borde*/
     height: 250px; /*Alto del espacio para escribir*/
     width: 577px; /*Largo del espacio para escribir*/
-    font-size: 32px; /*Tamaño texto*/
+    font-size: 20px; /*Tamaño texto*/
     color: darkblue; /*Color texto*/
     outline: none; /*Sin borde cuando se está escribiendo*/
     resize:none;
@@ -91,7 +91,7 @@ label{
 .muñeco{
     display: flex; /*que ocupe solo el espacio necesario*/
     position: absolute ; /*una posición relativa*/
-    top: 180px;
+    top: 150px;
     left: 910px;
     width: 226px;
     height: 194px;
@@ -100,7 +100,7 @@ label{
 .mensaje-1{
     display: flex;
     position: absolute;
-    top: 390px;
+    top: 380px;
     left: 910px;
     width: 226px;
     font-size: 18px;
@@ -119,15 +119,21 @@ label{
     font-weight: 400;
 }
 
-h1{
-    font-size: 24px;
-    color: black;
-    font-weight: bold;
-    text-align: center;
+.div-respuesta{
     display: flex;
     position: absolute ;
-    top: 180px;
-    left: 910px;
+    top: 85px;
+    left: 920px;
+}
+
+.respuesta{
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    color: darkblue;
+    font-weight: 500;
     width: 226px;
-    height: 194px;
+    height: 500px;
+    outline: none;
+    resize: none;
 }

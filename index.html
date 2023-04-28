@@ -19,34 +19,35 @@
         <form id="formulario">
                 <!--texto-entrante-->
             <div class="div-ingrese-texto">
-                <textarea id="texto" class="ingrese-texto" type="text" id="Ingrese el texto a encriptar" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <textarea id="texto" class="ingrese-texto" type="text" placeholder="Ingrese el texto aquí" autofocus required></textarea>
             </div>
 
                  <!--BOTONES-->
             <div class="div-botones">
                 <label for="Encriptar">(!) solo letras minusculas y sin acentos</label>
-                <button type="submit" class="boton-encriptar">Encriptar</button>
-
-                <button type="submit" class="boton-desencriptar">Desencriptar</button>
+                <button onclick="ocultarMuñeco()" type="submit" class="boton-encriptar">Encriptar</button>
+                <button onclick="ocultarMuñeco()" type="submit" class="boton-desencriptar">Desencriptar</button>
             </div>
         </form>
 
             <!--texto-respuesta-->
-        <canvas class="canvas"> </canvas>
+        <canvas class="canvas"> </canvas> 
+
+            <!--Respuesta-->
+        <div class="div-respuesta">
+           <textarea id="respuesta" class="respuesta" type="text" readonly></textarea>
+        </div>
 
             <!--Cuando no hay texto-->
-        <div>
+        <div id="muñequito">
             <img src="imagenes/Muñeco.png" class="muñeco">
             <p class="mensaje-1">Ningún Mensaje fue encontrado</p>
             <p class="mensaje-2">Ingrese el texto que desee encriptar o desencriptar</p>
-        </div>  
-
-            <!--Respuesta-->
-        <div>
-           <h1 id="respuesta"></h1>
-        </div>
+        </div> 
 
         <script>
+
+            //Empieza el campo donde aparecerá el texto
             const formulario = document.querySelector("#formulario");
             
             formulario.addEventListener("submit", validarFormulario);
@@ -58,8 +59,18 @@
 
                 const respuesta = document.getElementById("respuesta");
                 respuesta.textContent = (texto);
-                
             }
+            //Termina el campo donde aparecerá el texto
+
+            //Empieza el ocultar el muñeco
+            function ocultarMuñeco(){
+                document.getElementById("muñequito").style.visibility = "hidden";
+            }
+            //Termina el ocultar el muñeco
+
+
+                
+            
         </script>
 
     </body>
