@@ -118,3 +118,16 @@ label{
     text-align: center;
     font-weight: 400;
 }
+
+h1{
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    position: absolute ;
+    top: 180px;
+    left: 910px;
+    width: 226px;
+    height: 194px;
+}

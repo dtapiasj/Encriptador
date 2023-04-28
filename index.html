@@ -16,17 +16,18 @@
             <img src="imagenes/Logo.png">
         </div>
 
-        <form>
+        <form id="formulario">
                 <!--texto-entrante-->
             <div class="div-ingrese-texto">
-                <textarea class="ingrese-texto" type="text" id="Ingrese el texto a encriptar" placeholder="Ingrese el texto aquí" required autofocus></textarea>
+                <textarea id="texto" class="ingrese-texto" type="text" id="Ingrese el texto a encriptar" placeholder="Ingrese el texto aquí" autofocus></textarea>
             </div>
 
                  <!--BOTONES-->
             <div class="div-botones">
                 <label for="Encriptar">(!) solo letras minusculas y sin acentos</label>
-                <input type="submit" value="Encriptar" class="boton-encriptar">
-                <input type="submit" value="Desencriptar" class="boton-desencriptar">
+                <button type="submit" class="boton-encriptar">Encriptar</button>
+
+                <button type="submit" class="boton-desencriptar">Desencriptar</button>
             </div>
         </form>
 
@@ -39,6 +40,27 @@
             <p class="mensaje-1">Ningún Mensaje fue encontrado</p>
             <p class="mensaje-2">Ingrese el texto que desee encriptar o desencriptar</p>
         </div>  
+
+            <!--Respuesta-->
+        <div>
+           <h1 id="respuesta"></h1>
+        </div>
+
+        <script>
+            const formulario = document.querySelector("#formulario");
+            
+            formulario.addEventListener("submit", validarFormulario);
+
+            function validarFormulario(e){
+                e.preventDefault();
+
+                const texto = document.querySelector("#texto").value;
+
+                const respuesta = document.getElementById("respuesta");
+                respuesta.textContent = (texto);
+                
+            }
+        </script>
 
     </body>
 
