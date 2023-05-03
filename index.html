@@ -25,8 +25,8 @@
                  <!--BOTONES-->
             <div class="div-botones">
                 <label for="Encriptar">(!) solo letras minusculas y sin acentos</label>
-                <button onclick="ocultarMuñeco()" type="submit" class="boton-encriptar">Encriptar</button>
-                <button onclick="ocultarMuñeco()" type="submit" class="boton-desencriptar">Desencriptar</button>
+                <button id="encriptar" onclick="btnEncriptar()" type="submit" class="boton-encriptar">Encriptar</button>
+                <button id="desencriptar" onclick="btnDesencriptar()" type="submit" class="boton-desencriptar">Desencriptar</button>
             </div>
         </form>
 
@@ -39,39 +39,13 @@
         </div>
 
             <!--Cuando no hay texto-->
-        <div id="muñequito">
+        <div id="muñequito" class="muñequito">
             <img src="imagenes/Muñeco.png" class="muñeco">
             <p class="mensaje-1">Ningún Mensaje fue encontrado</p>
             <p class="mensaje-2">Ingrese el texto que desee encriptar o desencriptar</p>
         </div> 
 
-        <script>
-
-            //Empieza el campo donde aparecerá el texto
-            const formulario = document.querySelector("#formulario");
-            
-            formulario.addEventListener("submit", validarFormulario);
-
-            function validarFormulario(e){
-                e.preventDefault();
-
-                const texto = document.querySelector("#texto").value;
-
-                const respuesta = document.getElementById("respuesta");
-                respuesta.textContent = (texto);
-            }
-            //Termina el campo donde aparecerá el texto
-
-            //Empieza el ocultar el muñeco
-            function ocultarMuñeco(){
-                document.getElementById("muñequito").style.visibility = "hidden";
-            }
-            //Termina el ocultar el muñeco
-
-
-                
-            
-        </script>
+        <script src="script.js"></script>
 
     </body>
 
