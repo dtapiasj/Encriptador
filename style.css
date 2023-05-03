@@ -128,12 +128,30 @@ label{
 
 .respuesta{
     background-color: white;
+    border-radius: 20px;
     border: none;
     font-size: 18px;
     color: darkblue;
     font-weight: 500;
-    width: 226px;
+    width: 220px;
     height: 500px;
     outline: none;
     resize: none;
+}
+
+.btnCopiar{
+    display: flex; 
+    position: absolute ;
+    top: 520px;
+    left: 910px;
+}
+
+.styleCopiar{
+    height: 50px;
+    width: 220px;
+    background-color: white;
+    color: darkblue;
+    border: 1px solid #0a3871 ;
+    border-radius: 24px;
+    margin: 0 6px;
 }

@@ -52,36 +52,3 @@ function btnDesencriptar(){
         }
         return desencriptando;
     }
-
-/*
-
-  //Funciona pero no diferencia los botones
-
-            const formulario = document.querySelector("#formulario");
-
-            formulario.addEventListener("submit", validarFormulario);
-
-            function validarFormulario(e){
-                e.preventDefault();
-
-                const texto = document.querySelector("#texto").value;
-
-                const respuesta = document.getElementById("respuesta");
-                respuesta.textContent = (texto);
-
-                let textoCifrado = texto
-                    
-                    .replace(/e/gi, "enter")
-                    .replace(/i/gi, "imes")
-                    .replace(/a/gi, "ai")
-                    .replace(/o/gi, "ober")
-                    .replace(/u/gi, "ufat");
-
-                if (document.getElementById("texto").value.length != 0){
-                document.getElementById("respuesta").value = textoCifrado;
-
-                document.getElementById("muñequito").style.visibility = "hidden";
-                }
-
-            }
-*/
