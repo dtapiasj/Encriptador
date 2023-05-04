@@ -52,3 +52,11 @@ function btnDesencriptar(){
         }
         return desencriptando;
     }
+
+    function copy(){
+        let copiarTexto = document.querySelector("#respuesta");
+        copiarTexto.select();
+        navigator.clipboard("copiar");
+    }
+
+    document.querySelector("#copiar").addEventListener("click", copy);
