@@ -90,7 +90,7 @@ label{
     height: 530px;
 }
 
-.muñeco{
+.muneco{
     display: flex; /*que ocupe solo el espacio necesario*/
     position: absolute ; /*una posición relativa*/
     top: 150px;
