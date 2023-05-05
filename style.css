@@ -51,7 +51,13 @@ label{
     margin: -30px 30px;
     font-size: 12px;
     color: #495057;
+}
 
+.exclamacion{
+    display: flex;
+    width: 11px;
+    height: 11px;    
+    margin: 0 5px;
 }
 
 .boton-encriptar{
@@ -90,7 +96,7 @@ label{
     height: 530px;
 }
 
-.muñeco{
+.muneco{
     display: flex; /*que ocupe solo el espacio necesario*/
     position: absolute ; /*una posición relativa*/
     top: 150px;
@@ -162,4 +168,9 @@ label{
 .styleCopiar:hover, .boton-encriptar:hover, .boton-desencriptar:hover{
     transform: scale(1.02);
     font-weight: 600;
+}
+
+.styleCopiar:active, .boton-encriptar:active, .boton-desencriptar:active{
+    transform: scale(1.0);
+    font-weight: 100;
 }

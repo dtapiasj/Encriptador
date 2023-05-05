@@ -2,7 +2,7 @@
 const texto = document.querySelector(".ingrese-texto");
 const respuesta = document.querySelector(".respuesta");
 const formulario = document.querySelector("#formulario");
-const muñequito = document.querySelector(".muñequito");
+const munequito = document.querySelector(".munequito");
 const copy = document.querySelector("#copy")
 formulario.addEventListener("submit", validarFormulario);
 
@@ -14,7 +14,7 @@ function btnEncriptar(){
     const textoEncriptado = encriptar(texto.value);
     respuesta.value = textoEncriptado;
     texto.value = "";
-    muñequito.style.visibility = "hidden";
+    munequito.style.visibility = "hidden";
     copy.style.display = "block"
 }
 
@@ -34,7 +34,7 @@ function btnDesencriptar(){
     const textoDesencriptado = desencriptar(texto.value);
     respuesta.value = textoDesencriptado;
     texto.value = "";
-    muñequito.style.visibility = "hidden";
+    munequito.style.visibility = "hidden";
     copy.style.display = "block"
 }
 

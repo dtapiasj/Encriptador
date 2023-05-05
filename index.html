@@ -13,18 +13,18 @@
     <body>
             <!--Logo-->
         <div class="logo">
-            <img src="imagenes/Logo.png">
+            <img src="imagenes/logo.png">
         </div>
 
         <form id="formulario">
                 <!--texto-entrante-->
             <div class="div-ingrese-texto">
-                <textarea id="texto" class="ingrese-texto" type="text" placeholder="Ingrese el texto aquí" autofocus required></textarea>
+                <textarea id="texto" class="ingrese-texto" type="text" placeholder="Ingrese el texto aquí" autofocus></textarea>
             </div>
 
                  <!--BOTONES-->
             <div class="div-botones">
-                <label for="Encriptar">(!) solo letras minusculas y sin acentos</label>
+                <label for="Encriptar"><img src="imagenes/exclamacion.png" class="exclamacion">Solo letras minúsculas y sin acentos</label>
                 <button id="encriptar" onclick="btnEncriptar()" type="submit" class="boton-encriptar">Encriptar</button>
                 <button id="desencriptar" onclick="btnDesencriptar()" type="submit" class="boton-desencriptar">Desencriptar</button>
             </div>
@@ -39,8 +39,8 @@
         </div>
 
             <!--Cuando no hay texto-->
-        <div id="muñequito" class="muñequito">
-            <img src="imagenes/Muñeco.png" class="muñeco">
+        <div id="munequito" class="munequito">
+            <img src="imagenes/muneco.png" class="muneco">
             <p class="mensaje-1">Ningún Mensaje fue encontrado</p>
             <p class="mensaje-2">Ingrese el texto que desee encriptar o desencriptar</p>
         </div>
