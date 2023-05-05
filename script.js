@@ -3,6 +3,7 @@ const texto = document.querySelector(".ingrese-texto");
 const respuesta = document.querySelector(".respuesta");
 const formulario = document.querySelector("#formulario");
 const muñequito = document.querySelector(".muñequito");
+const copy = document.querySelector("#copy")
 formulario.addEventListener("submit", validarFormulario);
 
 function validarFormulario(e){
@@ -14,7 +15,7 @@ function btnEncriptar(){
     respuesta.value = textoEncriptado;
     texto.value = "";
     muñequito.style.visibility = "hidden";
-
+    copy.style.display = "block"
 }
 
     function encriptar(encriptando){
@@ -23,9 +24,7 @@ function btnEncriptar(){
 
         for(let i = 0; i < matrizCodigo.length; i++){
             if(encriptando.includes(matrizCodigo[i][0])){
-
                 encriptando = encriptando.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
-
             }
         }
         return encriptando;
@@ -36,7 +35,7 @@ function btnDesencriptar(){
     respuesta.value = textoDesencriptado;
     texto.value = "";
     muñequito.style.visibility = "hidden";
-
+    copy.style.display = "block"
 }
 
     function desencriptar(desencriptando){
@@ -45,9 +44,7 @@ function btnDesencriptar(){
 
         for(let i = 0; i < matrizCodigo.length; i++){
             if(desencriptando.includes(matrizCodigo[i][0])){
-
                 desencriptando = desencriptando.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
-
             }
         }
         return desencriptando;
@@ -57,4 +54,3 @@ function btnDesencriptar(){
         navigator.clipboard.writeText(respuesta.value);
       }
       document.querySelector("#copy").addEventListener("click", copiar);
-      
